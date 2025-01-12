@@ -1,0 +1,41 @@
+.Panel_Busqueda{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+color: aliceblue;
+display: flex;
+flex-direction: column;
+height: auto;
+width: 100%;
+background-color:#007aff;
+}
+.Panel_Busqueda p{
+    font-size: xx-large;
+}
+
+.Panel_Busqueda div{
+    margin-left: 15px;
+
+}
+details p {
+    font-size: x-large;
+    color: rgb(174 185 156);
+}
+.Panel_Busqueda h1{
+    color: aliceblue;
+    font-size: 10vh;
+    font-weight: 600;
+}
+.Item_Busqueda form{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin-left: 15px;
+    height: 50%;
+}
+.Item_Busqueda input{
+    width: 60%;
+    height: 5vh;
+}
+.Item_Busqueda button{ width: 60%; height: 6vh; background-color:#007aff; color:
+     aliceblue; font-weight: 400; border:1px solid white ; margin-top: 10px; margin-bottom: 10px;}
+.Item_Busqueda button:hover{ background-color:aliceblue; color:#007aff;}
+.Item_Busqueda label{color: aliceblue;font-size: x-large;}

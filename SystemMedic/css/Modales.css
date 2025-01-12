@@ -1,0 +1,268 @@
+
+.invisible{
+height: 0;
+width: 0;
+}
+.Modal-Contenedor-Global{
+    height: 100vh;
+    width: 100%;
+    position:fixed;
+    z-index: 100;
+    /*un contenedor modal tiene como display:none invisible, que con js , accedemos a ese div o elemento
+        y modificamos su clase cambiando su valor del display:flex;
+    */
+    display: none;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente */
+    justify-content: center;
+    align-items: center;
+    font-family: system-ui;
+  
+}
+.Modal_Funcion_Sistema{
+    width: 100%;
+    height: 100vh;
+    z-index: 100;
+    position: fixed;
+    background-color: white;
+    font-family: system-ui;
+    transition: background-color 1s ease;
+}
+.trasn_Sistem_Modal{
+    background-color:rgba(0, 0, 0, 0.67); /* Fondo semi-transparente */
+}
+.Cabecera{
+    height: 0%;
+    width: 0%;
+    background-color: #ffffff;
+    margin: 10px;   
+    transition: width 2s ease,
+    height 2s ease,
+    visibility 2s ease;
+    visibility: hidden;
+}
+
+.trans_c{
+    width: 100%;
+    height: 25%;
+    color:black;
+    visibility: visible;
+    text-align: start;
+
+}
+.trans_c p{
+    text-align: center;
+    font-size: large;
+    width: 100%;
+    height: 23%;
+    border: solid 2px #3391E7;
+}
+.trans_c h1{
+    margin: 10px;
+}
+.Detalles_Sistema{
+    width: 0;
+    height: 0;
+    background-color: #3391E7;
+    color: #ffffff;
+    transition: width 2s ease,
+    height 2s ease;
+    overflow: auto;
+}
+.Detalle_trns{
+    margin: 10px;
+    width: 100%;
+    height: 70%;
+}
+
+.Detalles_Cerrar_Trns{
+
+}
+    .trans_c p:hover{
+        background-color: #3391E7;
+    }
+
+    .Funciones{
+        border: solid 1px #ffffff;
+       margin :10px;
+        display: flex;
+        flex-direction: row;
+        height: 30%;
+        width: 100%;    
+    }
+    .Descripcion{
+        margin: 10px;
+    }
+    .Descripcion p {
+        font-weight:700 ;
+    }
+    .Registro_Cita{
+        width: 50%;
+        height: 100%;
+        background-color:white;
+    }
+    .Reservar_Cita{
+        width: 50%;
+        height: 100%;
+        background-color: white;
+    }
+    .Admnistracion_Citas{
+        width: 50%;
+        height: 100%;
+        background-color: white;
+    }
+    .Facturacion{
+        width: 50%;
+        height: 100%;
+        background-color: white;
+    }
+
+.transicion{
+    animation: MostrarModal 2s forwards;
+}
+.cerrarTrans{
+    animation: CerrarModal 2s forwards;
+}
+@keyframes MostrarModal {
+    
+    from{
+        opacity: 0;
+    }
+    to{
+    opacity: 1;
+    }
+}
+@keyframes CerrarModal {
+    from{
+        opacity: 1;
+    }
+    to{
+    opacity: 0;
+    }
+}
+
+.Content-Modal{
+    width: 100%;
+    height: 96%;
+    background-color:#ffffff;
+    margin: 10px;
+}
+.Modal-Content-Items{
+ 
+    width: 100%;
+    height: 100%;
+}
+.Items-Content-Modal{
+    
+    height:100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+.Contenedor_Integrantes_Grid{
+    overflow: auto;
+  display: grid;
+  grid-template-columns: repeat(3,33%);
+  grid-template-rows: repeat(2,50%);
+  width: 100%;
+  padding: 10px;
+    }
+    .Titulos{
+        margin: 10px;
+        display: flex;
+        flex-direction: column;
+       
+        .Button-Close-Modal{
+        background-color: #3391E7;
+        border: none;
+        color: #ffffff;
+        width: 140px;
+        height: 40px;
+        }
+    }
+    .Logo_Argentina{
+        background-image: url(../Imagenes/Logo_Istpargentina.jfif);
+        height: 100%;
+        width: 100%;
+        background-size: 73% 73%;
+        background-repeat: no-repeat;
+        background-position: center;
+        margin-top: 5px;
+    }
+
+    .Contenedor_Integrantes{
+        border:solid 1px cornflowerblue;
+        width: 100%;
+        height: 100%;
+        /*
+        display :los hijos se distribuyan o ordenen de forma ya sea de columnas o de filas 
+        ||=filas , __ = columnas
+         dentro de un contenedor padre {
+            hijo1,hijo2
+        }
+
+        */
+        display: flex;
+        /*flex_direction:filas*/
+        flex-direction: row;
+    }
+    
+    .Detalles{
+        text-align: center;
+        width: 85%;
+        transition: width 1s ease,
+        margin 1s ease,
+        background-color 1s ease ;  
+        
+    }
+    .Detalles:hover{
+        margin: 0;
+        width: 150%;
+        background-color: #3391E7;
+        .Img-Items{
+            width: 30vh;
+        }
+    
+    }
+   .Img-Items{
+    transition: width 1s ease;
+    width: 100%;
+    height: 100%; 
+   }
+
+
+   .Img1{
+    background-repeat: no-repeat;
+    background-image: url(../Imagenes/cueva.jfif);
+    background-size: 100% 100%;
+   }
+
+   .Img2{
+   
+    background-repeat: no-repeat;
+    background-image: url(../Imagenes/Barreto.jfif);
+    background-size: 100% 100%;
+    
+   }
+   .Img3{
+  
+    background-repeat: no-repeat;
+    background-image: url(../Imagenes/chuquillanqui.jfif);
+    background-size: 100% 100%;
+    
+   }
+   .Img4{
+    background-repeat: no-repeat;
+    background-image: url(../Imagenes/Kimberly.jfif);
+    background-size: 100% 100%;
+    
+   }
+   .Img5{
+    background-repeat: no-repeat;
+    background-image: url(../Imagenes/Gonsales.jfif);
+    background-size: 100% 100%;
+    
+   }
+

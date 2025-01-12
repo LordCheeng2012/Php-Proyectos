@@ -1,0 +1,62 @@
+
+
+
+
+Este es el primer archivo del proyecto donde desarrollaremos un sistema de reserva de citas
+para el  hospital['Indicar Nombre proyecto'] con las siguientes implementaciones:
+
+GRUPO NUMERO :?
+Integrantes:
+-
+-
+-
+-
+Antemanos y consideraciones :
+Se debe establecer y diseñar una bd que mantenga todos los registros
+de los pacientes, médicos, citas, etc.
+Tablas principales :
+    - Pacientes
+    - Médicos
+    - historial Citas
+
+Funciones Principales: Este sistema sta enfocado para consultas y citas al paciente
+login validador de credenciales
+Registro de citas
+verificar doctores disponibles
+
+Editar citas 
+Ver Historias Clinicas
+pagar citas
+
+_________________________
+funciones complejas 
+{
+muestra todas las citas realizadas el mismo dia de session
+actualizacion de datos cada vez que el usuario iniccie session
+muestra catalogo de doctores
+muestra los resultados de la cita atendidas->respuesta de otro sistema de atencion
+
+
+}
+Arquitectura
+modelo basico sin relaciones a expecion de rutas como los estilos y recursos
+ graficos u otros
+Proyecto[Nombre proyecto]{
+--dentro del proyecto tiene 2 carpetas 
+---carpeta css (para los estilos)
+---carpeta imagenes (u otros recursos)
+archivos php como:
+*Nota : los siguientes archivos componen todo el front del dashboard
+ que esta dividido para no tener codigo largo*
+  {
+home.php => es el inico
+header.php => es el encabesado del home.php, 
+footer.php => footer del home,
+setting=>opciones del home,
+sidebar=>menu lateral del home
+}
+carpeta[Logica]= Esta carpeta contiene toda la logica de los procesos , desde la conexion
+hasta los procesos ya mencionados
+
+}
+

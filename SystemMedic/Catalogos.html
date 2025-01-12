@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en" id="html" >
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" 
+    content="width=device-width,
+     initial-scale=1.0">
+     <link rel="stylesheet" href="./css/Catalogos.css">
+    <title> Catalogo de Doctores de la Semana</title>
+</head>
+<body>
+    <header>
+        <div>
+            <h1>Mejores Doctores de la Semana</h1>
+            <p>Separa tus Citas con estos Doctores y
+                 recibe la mejor atencion </p>
+        </div>
+       
+       <nav>
+        <ul>
+            
+            <li><a href="Catalogos.html">Catalogos</a></li>
+            <li><a href="./Home.php">Regresar</a></li>
+
+        </ul>
+       </nav>
+    </header>
+    <main>
+        <div class="card-container">
+            <div class="card">
+                <img src="./Imagenes/Doctor1.jfif" alt="">
+                <div class="card-content">
+                    <h2>Diego Martin Huaman Estrada</h2>
+                    <h3>Especialidad: Cardiología</h3>
+                    <br>
+                    <p>Egresado de la Universidad Nacional de San Marcos, con especialización en cardiología en el Hospital Nacional Edgardo Rebagliati Martins. Experiencia en tratamientos de enfermedades cardiovasculares y emergencias cardíacas.</p>
+                    <a href="./Registrar_Cita.php?Id_Doctor=''" class="btn">Adjuntar tu Cita</a>
+                    <a href="#"  onclick="CommentariosShow('Diego_Martin')"  class="btn" >Comentarios</a>
+                </div>
+            </div>
+        </div>
+        <div class="card-container">
+            <div class="card">
+                <img src="./Imagenes/Doctor2.jfif" alt="">
+                <div class="card-content">
+                    <h2>Ana Sanchez Rivera</h2>
+                    <h3>Especialidad: Dermatología</h3>
+                    <br>
+                    <p>Graduada en dermatología por la Universidad Nacional Autónoma de México, con experiencia en el diagnóstico y tratamiento de enfermedades de la piel, incluyendo cáncer de piel, psoriasis y eczema.</p>
+                    <a href="./Registrar_Cita.php?Id_Doctor=''" class="btn">Adjuntar tu Cita</a>
+                    <a href="#" onclick="CommentariosShow('Ana_Sanchez')" class="btn" >Comentarios</a>
+                </div>
+            </div>
+        </div>
+        <div class="card-container">
+            <div class="card">
+                <img src="./Imagenes/Doctor3.jpg" alt="">
+                <div class="card-content">
+                    <h2>Carlos Martinez Lopez</h2>
+                    <h3>Especialidad: Neurología</h3>
+                    <br>
+                    <p>Especialista en neurología con formación en el Instituto Nacional de Neurología y Neurocirugía. Experiencia en el tratamiento de trastornos neurológicos como epilepsia, esclerosis múltiple y enfermedades neurodegenerativas.</p>
+                    <a href="./Registrar_Cita.php?Id_Doctor=''" class="btn">Adjuntar tu Cita</a>
+                    <a href="#" onclick="CommentariosShow('Carlos_Martinez')" class="btn" >Comentarios</a>
+                </div>
+            </div>
+        </div>
+        <div class="card-container">
+            <div class="card">
+                <img src="./Imagenes/Doctor6.avif" alt="">
+                <div class="card-content">
+                    <h2>Luis Ramirez Torres</h2>
+                    <h3>Especialidad: Pediatría</h3>
+                    <br>
+                    <p>Graduado en pediatría por la Universidad de Buenos Aires. Experiencia en el cuidado de la salud infantil, incluyendo inmunizaciones, desarrollo infantil y tratamiento de enfermedades pediátricas comunes.</p>
+                    <a href="./Registrar_Cita.php?Id_Doctor=''" class="btn">Adjuntar tu Cita</a>
+                    <a href="#" onclick="CommentariosShow('Luis_Ramirez')" class="btn"  >Comentarios</a>
+                </div>
+            </div>
+        </div>
+        <div class="card-container">
+            <div class="card">
+                <img src="./Imagenes/Doctor5.jfif" alt="">
+                <div class="card-content">
+                    <h2>Jorge Hernandez Ruiz</h2>
+                    <h3>Especialidad: Oftalmología</h3>
+                    <br>
+                    <p>Egresado en ciencias de la oftalmología y bachiller en UNSM. Cuenta con una gran experiencia en casos de salud extrema, incluyendo cirugías de cataratas y tratamientos de glaucoma.</p>
+                    <a href="./Registrar_Cita.php?Id_Doctor=''" class="btn">Adjuntar tu Cita</a>
+                    <a href="#" onclick="CommentariosShow('Jorge_Hernandez')" class="btn" >Comentarios</a>
+                </div>
+            </div>
+        </div>
+        <div class="card-container">
+            <div class="card">
+                <img src="./Imagenes/Doctor6.jfif" alt="">
+                <div class="card-content">
+                    <h2>María Gomez Diaz</h2>
+                    <h3>Especialidad: Ginecología</h3>
+                    <br>
+                    <p>Graduada en ginecología por la Universidad de Barcelona, con experiencia en salud reproductiva, embarazo y parto, así como en el tratamiento de trastornos ginecológicos.</p>
+                    <a href="./Registrar_Cita.php?Id_Doctor=''" class="btn">Adjuntar tu Cita</a>
+                    <a href="#" class="btn" onclick="CommentariosShow('Maria_Gomez')"  >Comentarios</a>
+                </div>
+            </div>
+        </div>
+        <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        <link rel="stylesheet" href="./css/Modal_Notificacion.css">
+        <div id="Modal" style="top: -100vh;"  class="Modal" >
+
+    <div class="ModalCont_Catalogo" >
+           <div class="Titulo" style="height: auto;" >
+               <strong><h1 id="h1Titulo" > </h1></strong>
+           </div>
+           <div class="Detalles_Cita" >
+               <div class="Detalles" style=" display: flex;">
+                <div class="Item_Det_1" >
+                <h1>User 004 </h1> 
+                </div>
+                <div class="Item_Det_2" >
+                    <h1>Comentario :</h1>
+                <h4>Recibio la mejor atencion por eso su reseña es </h4>
+                <p id="prfCom"> </p>
+             </div>
+               </div>
+               <div class="Footer_Modal" >
+                   <h1 id="prfClasi" >Clasificacion de Servicio :  </h1> 
+                   <button id="btn_CierraModal" >Aceptar</button>       
+               </div>
+       
+           </div>
+        </div>   
+    </main>
+    
+   
+  <script src="./js/Comentarios.js"></script>
+   </div>
+</body>
+</html>
