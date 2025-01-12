@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+*{
+    padding: 0%;
+    margin: 0%;
+}
+.Circulo{
+    background-color: black;
+    width: 50vh;
+    height: 50vh;
+    margin-left: 15px;
+    margin-top: 50px;
+    border-radius: 50%;
+    animation: Circulo;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+/*
+Animaciones en css : para empesar se debe de crear los Keyframes son los eventos 
+que suceden cuando  el elemento pasa por ellos , y luego asignamos la animacion al  
+elemento que queremos que se mueva o realice una accion .
+Sintaxis : 
+@keyframes nombreDeLaAnimacion {
+    tiempoEnPorcentaje % { propiedadCSS : valor; }
+    recuerda que la animacion empieza en 0% - 100% termina
+    aunque hay funciones que podemos mover el flujo de ejecucion con 
+
+    activar la animacion primero  debemos
+     indicarlo con animation : nombreDeLaAnimacion duración  
+    velocidad  iteracion  modo de animacion
+}
+*/
+
+
+@keyframes Circulo{
+
+    0%{
+        background-color: aquamarine;
+        transform: translatex(100%);
+       /*Usamos la propieda translate : valor
+       el valor depende de la medida 
+       generalmente se usa en porcentaje 
+       Porcentaje de Arriba a abajo translate de y (en el plano 
+       cartesiano)
+       mientras mas alto es el porcentaje mas bajo es 
+       mientras mas corto mas alto ira 
+       */
+    }
+    50%{
+        background-color: red;
+        margin-right: 50%;
+        transform: translateY(100%);
+       
+    }
+    100%{
+        background-color: chartreuse;
+        transform: translateY(0%);
+       
+    }
+}
+
+/*Usamos Transformaciones
+usamos la propiedad transform
+Transladar elementos en posision de X o Y
+*/
+
+.Circulo1{
+    background-color: black;
+    width: 50vh;
+    height: 50vh;
+    margin-left: 15px;
+    margin-top: 50px;
+    transition:/*activar la transicion con tiempo*/ .3s ;
+    /*Mover elementos con : translate(x,y)
+    valores en porcentaje a width y height del elemento
+    */
+    /*transform: 
+    translateX(50px) translateY(50px);*/
+     /*Rotate solo acepta valores en Radianes
+    turn,deg,grad,rad
+    */
+    /*transform: rotate(1turn o 360deg , etc);*/
+    /*Scale(Valores Enteros) para aumentar o decrementar
+     su tamaño en x o y
+     Formula:
+     scale(valor)= Tamaño  original del elemento * Valor
+     el elemento :500px inicial;
+     ejemplo : Scale(2)= 500px*2;
+     todo en referencia a x o y =scale(x,y) o por separado;
+     */
+    }
+.Circulo1:active,
+.Circulo1:focus
+/*para activar el evento y para mantener hasta el proximo click focus
+entonces seria activate y focus 
+*/
+/*Para que esta animacion funcione debemos 
+agregar tiempo de animacion en la clase
+*/{
+    /*AHORA PODEMOS CREAR VENTANITAS MODALES 
+    CON ESTAS ANIMACIONES : PRIMERO DEBEMOS SABER QUE EL SEUDOSELECTOR
+    ES ACTIVATE:CLICK AL ELEMENTO
+
+    */
+   /*para decrementar valor con un punto despues del valor */
+    background-color: rgb(28, 185, 151);
+    transform:  rotate(1turn) scaleX(2) translateX(50px) ;
+    transform-origin: left ;
+
+}
+
+/*IMPORTANTE EL ORDEN DE LOS METODOS ALTERA EL VALOR DE LA TRANFORMACION
+TE 
+N CAUIDADO AL CREAR TRANSFORM 
+
+CUANDO CREAS TRANFORM TEN EN CUENTA QUE SI HAY MAS DE UNA TRANSFORMS 
+EN AL MISMA CLASE , EL ULTIMO TRANSFORM SOBREESCRBE EL ANTERIOIR 
+ASI QUE SI DESEAS PUEDES CREAR UN TRANFORM : DENTRO DE TODOS LOS METODOS PARA 
+TRANFORMAR PARA CREAR VARIAS TRANSFORMACIONES EN UNA SIN SOBRESCRIBIR
+ASI :
+
+transform:
+metodo1:valor
+metodo2 :Valor
+metodoN:valorN;
+
+mal : 
+transforma :metodo1;
+transform : metodo 2; solo ejecuuta el ultimo trasform;
+*/
+
+body{
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    height: 100%;
+}
+
+.Contenedor{
+background-color: cadetblue;
+width: 100vh;
+margin: auto;
+height:100vh; 
+display: grid;
+place-items: center;   
+}
+.ContenedorModal{
+    /*Original*/
+background:rgb(0 0 0 / 0);
+width: 100%;
+height: 100%;
+margin: auto;
+display: none;
+}
+.Modal{
+    margin: auto;
+    position: relative;
+    width: 50vh;
+    height: 50vh;
+    display: none;
+    transform: translatey(0);
+    background-color: darkgreen;
+}
+/*Sintaxis simple para transitions: propiedad sufrida , en este ejemplo : animar la opacidad
+en el evento hover
+*/
+ .Activate
+ /*Como debe Quedar*/ {
+  background: rgb(0 0 0 / 76%);
+  position: absolute;
+  transition: background-color 100ms;
+  display: block;
+  .Modal{
+    display:block;
+    animation: MostrarModal 100ms;
+    animation-fill-mode: forwards;/*Esta propiedad mantiene el estilo del estado final de la animacion*/
+  }
+
+}
+@keyframes MostrarModal {
+    0%{
+        transform: translateY(20px);
+    }
+    100%{
+        transform: translateY(135px);
+    }
+}
+
+</style>
+<body>
+    <div class="Contenedor">
+        <button id="ModalActivate" onclick="">Hasme Click</button>
+            <div id="ContModal" class="ContenedorModal" >
+               
+            <div  class="Modal">
+
+            </div>       
+            </div>
+        <script>
+                document.getElementById("ModalActivate").addEventListener('click',function(){
+                      document.getElementById("ContModal").classList.add("Activate");
+                });
+        </script>
+    </div>
+</body>
+</html>

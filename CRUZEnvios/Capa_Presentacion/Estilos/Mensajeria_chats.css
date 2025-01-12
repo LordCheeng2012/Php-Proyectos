@@ -1,0 +1,267 @@
+:root{
+    --green:#155f36;
+    --verdeUi:#009D00;
+    --azul:#2980F2;
+    --blanco:white;
+    --blancotrans:#D9D9D9;
+    --negro:black;
+    --rosadoUi:#BA1D48;
+    --verdetrans:#257448;
+    --morado:#7D07F2;
+    --moradotrans:#9B44F2;
+    --gris:#F7F7F7;
+    --rojo:#F22233;
+    --rojotrans:#F25C69;
+
+
+}
+
+
+.tituloMensaje{
+    padding:0;
+    margin:40px;
+}
+body {
+    background-color:var(--green);
+    color:var(--blanco);
+    height:100vh;
+    margin:0;
+    padding:0;
+    
+}
+header{
+    height: 40%;
+    color:var(--negro);
+    /* padding:1%; */
+    /* margin: 5px; */
+}
+.header{
+    display:flex;
+    flex-direction: row;
+
+}
+.hdr_title{
+    flex: 1;
+}
+.foto_perfil{
+    flex: 1;
+    height: 100%;
+    width: 50%;
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+}
+.foto_perfil img{
+    height:80%;
+    width: 50%;
+    border-radius:50%;
+    transform: scale(1);
+    margin: 5px;
+}
+.Notificaciones{
+    background-color:var(--green);
+    padding:10px;
+}
+.resumen  {
+    border:1px var(--negro) solid;
+    color:var(--blanco);
+    font-size:xx-large;
+    /* height: 52%; */
+}
+.resumen ul{
+    list-style:none;
+    display:flex;
+    margin:0;
+    align-items:center;
+    justify-content:center;
+    padding:0;
+}
+.resumen  ul li{
+ 
+    margin: 5px;
+    height:50px;
+    width: 100%;
+    text-align: center;
+}
+.resumen ul li:hover{
+    background-color:var(--blanco);
+    color:var(--negro);
+}
+main{
+    height: 70%;
+    background-color: var(--verdetrans);
+    padding: 20px;
+}
+.Content_Chats{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    background-color: var(--blancotrans);
+}
+.List_Chat-title{
+    margin: 10px;
+    color: var(--green);
+   
+}
+.Content_Chats_item{
+    width: 100%;
+    height: 100%;
+    border-left:1px solid black;
+}
+.Chats_Lista{
+    height: auto;
+    padding: 10px;
+   
+}
+.Chat_Item{
+    height: 25%;
+    color: var(--negro);
+    display: flex;
+    flex-direction: row;
+    background-color: var(--blancotrans);
+    border: 1px solid var(--verdetrans);
+}
+.Chat_Item:hover{
+    background-color: var(--green);
+    color: var(--blanco);
+}
+.Chat_Item img{
+    border-radius: 50%;
+    height: 80%;
+    width: 20%;
+    padding: 11px;
+}
+.Content_Chat{
+    padding: 10px;
+    font-size: medium;
+}
+.Content_Chat h2{
+    font-size: x-large;
+    font-weight: 500;
+}
+.Chat{
+    display: flex;
+    flex-direction: column;
+}
+.Sala_historial_msg{
+    flex: 1;
+    height: 60%;
+    overflow: auto;
+    background-color: var(--blancotrans);
+}
+.Input_msg_opciones{
+    height: 10%;
+    padding: 10px;
+    background-color: var(--gris);
+    display: flex;
+    flex-direction: row;
+}
+.Input_msg_opciones input{
+    height: 100%;
+    width: 50%;
+    flex: 1;
+    
+}
+.Input_msg_opciones button{
+    height: 100%;
+    width: 20%;
+    background-color: var(--verdetrans);
+    color: var(--blanco);
+    font-size:2rem;
+    border: 0;
+    margin: 5px;
+}
+.Input_msg_opciones button:hover{
+   
+    background-color: var(--blanco);
+    color: var(--verdetrans);
+    border: 1px soli #155f36;
+   
+}
+.info_user_chat{
+    margin:0;
+    padding: 5px;
+    padding-top: 10px;
+    height:30%;
+    width:auto;
+    background-color:var(--verdetrans);
+    display:flex;
+    flex-direction:row;
+    border:1px solid;
+}
+.info_user h1,h2{
+  margin: 0;
+  padding: 0;
+  font-size: 1.3rem;
+  padding-top: 10px;
+}
+.info_user_chat div{
+    width: auto;
+}
+.img_user img {
+   height: 100%;
+   width: 60%;
+   border-radius: 50%;
+   padding: 0px;
+}
+.Chat-History{
+    height: 65%;
+    width: auto;
+    overflow: auto;
+
+}
+.Chat-History span{
+    position: relative;
+    top: 50%;
+    color: var(--negro);
+    left: 50%;
+}
+.P_MES{
+    position: relative;
+    top: 50%;
+    color: var(--negro);
+}
+.Chat-Interaction{
+    height: auto;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+}
+
+.Chat-Interaction div{
+    margin: 1%;
+}
+.User_Receptor{
+    height: auto;
+    overflow: hidden;
+    width: auto;
+    grid-column: 1;
+    padding: 5px;
+    background-color: var(--verdetrans);
+}
+
+.User_Session{
+    height: auto;
+    overflow: hidden;
+    padding: 5px;
+    color: var(--negro);
+    width: auto;
+    grid-column: 2;
+    background-color: var(--gris);
+}
+.User_Receptor p{
+    font-size: small;
+}
+.User_Session p{
+    font-size: small;
+}
+
+
+
+
+
+
+

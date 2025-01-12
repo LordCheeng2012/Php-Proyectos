@@ -1,0 +1,31 @@
+:root{
+    --green:#155f36;
+    --azul:#2980F2;
+    --blanco:#FFFFFF;
+    --black:black;
+}
+
+.List_Div{
+overflow: auto;
+height: auto;
+width: 100%;
+
+}
+.List_Div div{
+    background-color: var(--green);
+    color: var(--blanco);
+    height: 10vh;
+    width: 100%;
+}
+.List_Div div ,h2{
+    padding-left: 10px;
+}
+.List_Div p {
+    font-size: larger;
+    font-weight: 600;
+}
+.List_Div div:hover{
+    transition: height 1s ease,font-size 1s ease;
+    height: 30vh;
+    font-size: medium;
+}

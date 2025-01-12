@@ -1,0 +1,41 @@
+:root{
+    --green:#155f36;
+    --azul:#2980F2;
+    --blanco:#FFFFFF;
+    --black:black;
+}
+
+.BodyInfoNotification{
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    pointer-events: none;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    overflow: hidden;
+   transition: background-color 1s ease;
+}
+
+
+.Chat_UpdateInfo{
+    position: relative;
+    top : -40%;
+    height: 40%;
+    width: 50%;
+    background-color: var(--green);
+    color: var(--blanco);
+}
+.Info_Notification{
+position: relative;
+top : 100%;
+height: 40%;
+width: 50%;
+background-color: var(--blanco);
+color: var(--green);
+transition: top 1s ease;
+}
+.active_Notiificacion{
+    top:60%;
+    
+}

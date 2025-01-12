@@ -1,0 +1,1 @@
+debes ejecutarlo en wemp server u otro terminal que ejecute php

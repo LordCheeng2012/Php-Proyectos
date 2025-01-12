@@ -1,0 +1,82 @@
+main header h1{
+    margin: 0;
+    color: #7E9E86;
+    text-align: center;
+    position: relative;
+    top: 10vh;
+}
+:root{
+    --green:#155f36;
+    --verdeUi:#009D00;
+    --azul:#2980F2;
+    --blanco:white;
+    --blancotrans:#D9D9D9;
+    --negro:black;
+    --rosadoUi:#BA1D48;
+    --verdetrans:#257448;
+    --morado:#7D07F2;
+    --moradotrans:#9B44F2;
+    --gris:#F7F7F7;
+    --rojo:#F22233;
+    --rojotrans:#F25C69;
+
+
+}
+.Container_Center_Page{
+    position: relative;
+    top: 20vh;
+    left: 50vh;
+    text-align: center;
+    color: #7E9E86;
+}
+ table{
+    align-items: center;
+    border: 1px solid black;
+}
+
+
+/*controlers*/
+.controlers{
+    margin: 0;
+    padding: 0;
+    font-size: medium;
+    text-align: center;
+    background-color: #7E9E86;
+}
+.controlers_select{
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    list-style: none;
+}
+.controlers_select  option{
+   border: 0;
+   list-style: none;
+   border-radius: 0;
+}
+.controlers_input {  
+    padding: 10px;
+    border: none;
+    border-radius: 0;
+   
+}
+.controlers_input :active{
+    border: none;
+    border-radius: 0;
+}
+.controlers_buttons_Confirm{
+    background-color:var(--green);
+    border: none;
+    color: var(--blancotrans);
+    font-size: 30px;
+    height: 10%;
+    width: 30%;
+    margin: 10px;
+
+}
+.controlers_buttons_Confirm:hover{
+    background-color: var(--blanco);
+    color: #155f36;
+}
+  

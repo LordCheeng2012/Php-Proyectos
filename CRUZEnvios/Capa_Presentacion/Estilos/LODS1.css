@@ -1,0 +1,160 @@
+body,html{
+    margin: 0;
+    padding: 0;
+    
+}
+
+* {
+font-family: sans-serif;
+}
+.Contenedor{
+    background-color:#010901;
+    height: 100vh;
+    color: black;
+    background-color: #025939;
+}
+.titulo{
+    color: aliceblue;
+}
+.Panel-Control{
+    height: 25vh;
+    background-color: #076b49;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    border: solid 1px white;
+    color: aliceblue;
+}
+.Item1{
+ background-color: #076b49;
+display: grid;
+grid-template-columns: 1fr 1fr;
+grid-template-rows: 1fr 1fr;
+}
+    .Item1 select{
+        place-self: center;
+        background-color:#e2e2e26b;
+        border:none; 
+        height:5vh;
+        width: 30vh;
+        }
+    .Item1 label{
+        place-self: center;
+        }
+.Item2{
+    background-color: #076b49;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+     }
+     .Item2 input{
+        place-self: center;
+        background-color:#e2e2e26b;
+        border:none; 
+        height:5vh;
+    }
+    .Item2 label{
+        place-self: center;
+    } 
+ .Item3{
+    background-color: #076b49;
+display: grid;
+grid-template-columns: 1fr 1fr;
+grid-template-rows: 1fr 1fr;
+ }
+    .Item3 input{
+    place-self: center;
+    background-color:#e2e2e26b;
+    border:none; 
+    height:5vh;
+    }
+    .Item3 label{
+    place-self: center;
+    }
+  .Item4{
+    background-color: #076b49;
+display: grid;
+grid-template-columns: 1fr ;
+         
+ }
+    .Item4 input{
+    place-self: center;
+    }
+    .Item4 label{
+    place-self: center;
+    }
+    .Item4 button{
+        place-self: center;
+        background-color:white;
+        height:7vh;
+        width:50vh;
+        border:none;
+    }
+    
+    .Item4 button:hover{
+        background-color: #3b8b6e;
+    }
+.resulta-tabla{
+    height: 65vh;
+    width: 100%;
+    background-color:aliceblue;
+}
+table, tbody,td,th{
+    border: 1px solid #010901;
+}
+thead{
+    background-color: #a5f3bf6b
+}
+th{
+    text-align: center;
+    padding: 20px 15px;
+}
+td{
+    text-align: center;
+    padding: 10px 15px;
+    border:#a5f3bf6b solid 1px ;
+}
+table{
+    width: 100%;
+    height: 100%;
+}
+tbody tr:hover{
+background-color: #42a684;
+}
+.Detalles-Opciones{
+    display: flex;
+   flex-direction: row;
+}
+.Detalles{
+    width: 95px;
+    height: 50px;
+}
+.Detalles-Opciones:hover .Detalles{
+   background-color: #3b8b6e;
+   transition: background-color 2s;
+}
+.Options{
+ display: none;
+}
+.ActivarD{
+    
+    border:1px solid #3b8b6e69;
+    height: 30vh;
+    width: 22vh;
+    background-color: #3b8b6e;
+    margin-left: -223px;
+    margin-top: -71px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.ListOption{
+    height:10vh;
+      border:1px solid #00000069;
+     background-color: #91cfb9;
+}
+.ListOption:hover{
+    background-color: #effff9;
+}
+
+            

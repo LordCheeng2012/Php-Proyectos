@@ -1,0 +1,107 @@
+body{
+    background-color:black;
+}
+.Precio{
+    width: 449px;
+    height: 100px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    place-self: center;
+}
+.Resultado-Lista{
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: auto;
+
+}
+
+.Lista{
+    width: 456px;
+    background-color: #198754bf;
+    border: none;
+}
+.Lista:hover{
+background-color:aliceblue;
+}
+.Contenido{
+     height: 100vh; 
+    background-color:#025939;
+    display: flex;
+    flex-direction: column;
+    color: black;
+
+        }
+
+.Cont-Padre{
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    height: 50vh;
+   
+        }
+
+.hijo{
+
+    width: auto;
+    background-color:#025939;
+    flex: 1;
+    display: grid;
+    place-items: center;
+        }
+.Fot{
+    height: 50vh;
+    background-color:#025939;
+    flex-grow: 1;
+    
+   
+}
+.Sub-Container{
+   height: 40vh;
+    width: 80vh;
+    /* margin-bottom: 43px;
+    por defecto display:flex es column
+    */
+    background-color: aliceblue;
+    font-family: system-ui; 
+    padding-left: 41px;
+}
+.title{
+    color: aliceblue;
+    font-family: system-ui;
+}
+.SubFooter{
+    background-color: aliceblue;
+    height: 43vh;
+    width: 132vh;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+.SubFooter select{
+    grid-column: 2/2;
+    place-self: center;
+    width: 95%;
+}
+.SubFooter div{
+    place-self: end;
+}
+.Sub-ResDni{
+    border: 1px solid;
+    height: 10vh;
+    width: 84vh;
+}
+.SubFooter input{
+    grid-column: 2/2;
+    place-self: center;
+    width: 95%;
+}
+.SubFooter label{
+    grid-column:1/2;
+    
+}
+
